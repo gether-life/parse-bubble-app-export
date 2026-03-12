@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "a": {
+      "id": "page-a",
+      "display_name": "Landing",
+      "events": [
+        {"id": "wf-a", "default_name": "Click CTA", "ref_user_id": "missing-user-id"}
+      ]
+    }
+  },
+  "types": {
+    "t1": {"id": "type-order", "display_name": "Order"}
+  },
+  "api_workflows": {
+    "b1": {"id": "bw-a", "display_name": "Webhook A"}
+  },
+  "reusables": {
+    "r1": {"id": "re-footer", "display_name": "Footer"}
+  },
+  "privacy": {
+    "p1": {"id": "pr-order", "display_name": "Order Privacy"}
+  },
+  "new_unmapped_section": {"x": 1}
+}

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Home",
+      "elements": [{"id": "el-1", "type": "Text"}],
+      "workflows": [
+        {
+          "id": "wf-signup",
+          "name": "Signup Submit",
+          "user_id": "user-123",
+          "api_endpoint": "https://example.com/signup",
+          "actions": [
+             {
+                "type": "Click",
+                "condition": {
+                    "type": "Expression",
+                    "args": {"type": "CurrentUser", "expression": {"name": "User Is Logged In"}}
+                }
+             }
+          ]
+        }
+      ]
+    }
+  ],
+  "data_types": [
+    {"id": "type-user", "name": "User"}
+  ],
+  "backend_workflows": [
+    {"id": "bw-1", "name": "Daily Job"}
+  ],
+  "reusable_elements": [
+    {"id": "re-1", "name": "Header"}
+  ],
+  "privacy_rules": [
+    {"id": "pr-1", "name": "User Privacy"}
+  ]
+}

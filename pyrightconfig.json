@@ -1,0 +1,15 @@
+{
+  "include": ["."],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "output",
+    "input",
+    "output_test*"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "."
+    }
+  ]
+}
